@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- action路徑，method方法 -->
+    <form action="/01.html" method="get">
+        <!-- name:
+        <input type="text" name="name"><br>
+        email:
+        <input type="email" name="email"><br>
+        number:
+        <input type="number" name="number"><br>
+        tel:
+        <input type="tel" name="tel"><br>
+        date:
+        <input type="date" name="date"><br> -->
+        <!-- 日期:每個瀏覽器，可能都會有點不同 -->
+        <!-- button一定要下type，預設值為submit(送出) -->
+        <!-- <button type="submit">哈囉</button>
+        <input type="submit" name="" id="">
+        <hr> -->
+        <!-- 使用input需要有對應的label -->
+        <label for="emailLa">Email</label>
+        <input type="email" id="emailLa" name="emailLa"
+         value="abc123@email.com"
+         placeholder="Email">
+        <!-- 不推薦的手法 -->
+        <!-- <label for="">
+            <input type="checkbox" name="like" value="雞肉"> 雞肉
+        </label><br>
+
+        <input type="checkbox" name="like" value="牛肉" id="beef">
+        <label for="beef">牛肉</label><br>
+        <input type="checkbox" name="like" value="雞肉" id="chicken">
+        <label for="chicken">雞肉</label><br>
+        <input type="checkbox" name="like" value="豬肉" id="pork">
+        <label for="pork ">豬肉</label><br> -->
+        <!-- <input type="submit" name="" id=""> -->
+        <hr>
+        <!-- 單選 name名稱要一樣 -->
+        <input type="radio" name="like" value="牛肉" id="beef" required>
+        <label for="beef">牛肉</label><br>
+        <input type="radio" name="like" value="雞肉" id="chicken" required>
+        <label for="chicken">雞肉</label><br>
+        <input type="radio" name="like" value="豬肉" id="pork" required>
+        <label for="pork ">豬肉</label><br>
+
+        <label for="area">縣市</label>
+        <select name="area" id="area">
+            <option value="彰化縣">彰化縣</option>
+            <option value="台北市">台北市</option>
+            <option value="高雄市">高雄市</option>
+            <option value="台南市">台南市</option>
+        </select><br>
+        <label for="content">多行文字</label>
+        <textarea name="" id="content">預設的文字內容</textarea>
+
+
+        <button type="submit">送出</button>
+        <button type="reset">重置</button>
+        <button type="button">按鈕 JS襙作</button>
+        <!-- 
+        label:顯示給用戶的文字
+        value:存到後端的文字
+        name:後端資料庫欄位
+        -->
+    </form>
+</body>
+
+</html>
